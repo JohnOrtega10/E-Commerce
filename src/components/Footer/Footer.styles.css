@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+footer{
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.301);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px
+} 
+
+
+footer h1{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.social-networks{
+    display: flex;
+    list-style:none
+
+} 
+
+.social-networks li{
+    text-decoration: none;
+
+}
+
+.social-networks li button{
+    border: none;
+    background: none;
+    margin:10px;
+    color: gray;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 600px) {  
+    footer h1{
+        font-family: 'Philosopher', sans-serif;
+        font-size: 40px;
+        color: gray;
+    }
+}

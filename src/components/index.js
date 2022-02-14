@@ -1,0 +1,6 @@
+export {default as ProtectedRoutes} from './ProtectedRoutes/ProtectedRoutes'
+export {default as NavBar} from './NavBar/NavBar'
+export {default as MainLayout} from './MainLayout/MainLayout'
+export {default as Modal} from './Modal/Modal'
+export {default as Footer} from './Footer/Footer'
+export {default as Loading} from './Loading/Loading'

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+ 
+ 
+ .login-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images/Jewelry_Necklace_Earrings_Model_Face_Makeup_Brown_575591_1280x887.jpg');
+    background-size: cover;
+    background-position: center;
+ }
+
+ .login{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 350px;
+    padding: 30px 0;
+    border-radius: 20px;
+    background-color: #e7dec8e0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+
+ .login h1{
+   font-family: 'Philosopher', sans-serif;
+ }
+
+ .login .test p{
+    margin-top: 10px;
+ }
+
+ .login .test p i{
+    margin-right: 10px;
+ }
+
+
+ .login .test{
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #cbaf8749;
+    color: black;
+ }
+ 
+.login .form-login{
+    width: 80%;
+    padding: 20px 0;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+ .login .form-login .input-login{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .login .form-login .input-login input{
+    padding: 9px 20px;
+    margin: 5px 0;
+    border: none;
+    outline: none;  
+ }
+
+ .login .form-login button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid #30475E;
+    background-color: #30475E;
+    color: white;
+    cursor: pointer; 
+    transition: 0.2s;
+   
+ }
+
+ .login .form-login button:hover{
+    background-color: white;
+    color: black;
+ }
+
+ .login .form-login input{
+   background-color: rgba(255, 255, 255, 0.466);
+ }
+
+
+ @media only screen and (min-width: 600px) {
+   .login{ 
+      max-width: 390px;
+   }
+  
+}
+
+

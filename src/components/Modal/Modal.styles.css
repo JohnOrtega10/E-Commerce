@@ -1,0 +1,132 @@
+.overlay-modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.623);
+}
+
+
+.modal{
+        width: 90vw;
+        max-width: 800px;
+        background-color: white; 
+        padding: 20px;    
+}
+
+.modal div:nth-child(1){
+        padding: 10px 10px 0 10px; 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+}
+
+.modal div:nth-child(1) button{
+        border: none;
+        background: none;
+        cursor: pointer;
+}
+
+.modal .modal-information{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;      
+}
+
+
+.modal .modal-information > div img{
+        width: 150px;
+}
+
+.modal .modal-information div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+}
+
+.modal .modal-information div:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+.modal .modal-information div:nth-child(3) button{
+        padding: 8px 32px;
+        width: 90%;
+        margin: 5px;
+        border: 1px solid #911d23;
+        background: none;
+        cursor: pointer;
+        transition: 0.3s;
+        
+}
+
+.modal .modal-information div:nth-child(3) button:nth-child(1){
+        background-color: #C4262E;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+}
+
+.modal .modal-information div:nth-child(3) button:nth-child(1):hover{
+        background-color: #911d23;
+}
+
+.modal .modal-information div:nth-child(3) button:hover{
+        color: white;
+        background-color: #911d23;
+        
+} 
+
+
+@media only screen and (min-width: 600px) {
+        .modal .modal-information{
+                flex-direction: row;
+        }
+
+        .modal .modal-information div:nth-child(1){
+                width: 33%;
+        } 
+        
+        .modal .modal-information div:nth-child(2){
+                width: 33%;
+        }
+        
+        .modal .modal-information div:nth-child(3){
+                width: 33%;      
+        }
+
+        .modal .modal-information div:nth-child(3) button{
+                width: 80%;    
+        }
+
+        .modal .modal-information > div img{
+                width: 120px;
+        }
+}
+
+
+@media only screen and (min-width: 768px) {
+        .modal .modal-information > div img{
+                width: 200px;
+        }
+}
+
+
+
+
+

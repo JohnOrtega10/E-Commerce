@@ -1,0 +1,98 @@
+ .details{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 100px;
+     flex-wrap: wrap;
+ }
+
+ .slider-detail{
+    height: 30vh;
+ }
+
+ .details .slider{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .details .slider .images-list{
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+ }
+
+ .slider .buttons-slider{
+     width: 100%;
+     z-index: 2;
+     position: absolute;
+     top:50%;
+     display: flex;
+     justify-content: space-between;  
+     padding: 0 20px; 
+ }
+
+ .slider .buttons-slider > button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.582);
+ }
+
+ .details .information{
+    width: 90vw;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center; 
+ }
+
+ .details .information > div{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+ }
+
+ .details .information > div button{
+   padding: 10px 20px;
+   cursor: pointer;
+   background: none;
+   border: none;
+ }
+
+ .details .information > div > button:nth-child(4){
+   border: 1px solid black;
+   color: black;
+   transition: 0.3s; 
+ }
+ 
+ .details .information > div > button:nth-child(4):hover{
+   background-color: black;
+   color: white;
+ }
+
+
+ .related{
+    margin: 80px 40px 0px 8vw;
+ }
+
+
+@media only screen and (min-width: 600px) {
+   .details .slider{
+      margin: auto;
+      width: 500px;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+   }
+   
+   .related{
+      margin: 80px 40px 0px 8vw;
+   }
+    
+}

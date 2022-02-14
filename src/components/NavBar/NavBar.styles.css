@@ -1,0 +1,191 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+.nav-container{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 40vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+} 
+
+.logo{
+    text-align: center;
+    font-size: 200px;
+    transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.logo.active{
+    transform: translateY(-300px) scale(0.2);
+    filter: blur(10px); 
+} 
+
+
+
+.nav{
+    background-color: #fff;
+    transform: translateY(-200px);
+    transition: transform 0.8s ease-in-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    z-index: 1;
+}
+
+.nav div i{
+    margin: 0px 10px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px; 
+}
+
+.nav ul li{
+    list-style: none;
+    width: 90px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.nav p{
+    
+    font-family: 'Philosopher', sans-serif;
+}
+
+.nav.active{
+    transform: translateY(0px);
+    position: fixed;
+    top: 0;  
+}
+
+.nav ul li::before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.nav ul li:hover::before{
+    width: 100%;
+}
+
+
+.nav-logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-logo ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    
+}
+ 
+.nav-logo ul li{
+    list-style: none; 
+    width: 90px; 
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.nav-active-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+    transition: background-color 0.8s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+.nav-active-container:hover{
+    background: none;
+    background-color: #fff;
+    color: black;
+    height: auto; 
+    
+}
+
+.inactive{
+   background-color: transparent;  
+}
+
+.inactive-nav{
+    visibility: hidden;
+}
+
+.nav-logo ul li::before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.nav-logo ul li:hover::before{
+    width: 100%;
+}
+ 
+div .cart-icon span{
+    border-radius: 50%;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    background-color: rgb(185, 24, 24);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:10px;
+    right: 0;
+
+}
+
+div .cart-icon  {
+    position: relative;
+
+
+
+
+} 
+
+
