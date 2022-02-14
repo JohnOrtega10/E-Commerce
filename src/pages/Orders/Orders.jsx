@@ -10,7 +10,7 @@ const Orders = () => {
 
     useEffect(()=>{
         dispatch(getOrdersThunk())
-    }, [])
+    }, [dispatch])
 
     
     return (
